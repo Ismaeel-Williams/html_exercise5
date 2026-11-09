@@ -3,22 +3,50 @@ body {
   padding: 0;
 }
 
-div ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #333;
   padding: 15px;
 }
-div ul li {
+ul li {
   float: left;
+  display: block;
+  color: white;
+}
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-div ul li {
-    display: block;
-    color: white;
+#main {
+  margin-top: 80px;
+}
+
+#blog {
+  text-align: center;
+  max-width: 800px;
+}
+
+#blog h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+div#blog p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+}
+
+ul li a:hover:not(.active) {
+  background-color: #111;
+  border-bottom: 2px solid white;
 }
